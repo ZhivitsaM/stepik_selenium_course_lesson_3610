@@ -12,3 +12,5 @@ def test_add_item_to_backet(browser):
         condition.presence_of_element_located((By.CSS_SELECTOR, ".btn-add-to-basket"))
     )
     assert button, "There is no button to add item to cart!"
+
+    time.sleep(30)
