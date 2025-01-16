@@ -9,6 +9,6 @@ def test_add_item_to_backet(browser):
 
     # Проверка наличии кнопки добавления товара в корзину
     button = WebDriverWait(browser, 10).until(
-        condition.presence_of_element_located((By.CSS_SELECTOR, ".btn-add-tot-basket"))
+        condition.presence_of_element_located((By.CSS_SELECTOR, ".btn-add-to-basket"))
     )
     assert button, "There is no button to add item to cart!"
